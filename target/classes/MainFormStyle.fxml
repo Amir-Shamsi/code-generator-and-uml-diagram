@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.pannable.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onDragDropped="#pWhenDropped" onDragOver="#pDragOver" prefHeight="819.0" prefWidth="1315.0" style="-fx-background-color: #222333; -fx-background-position: center;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainForm.MainViewFxml">
+    <children>
+        <VBox alignment="BASELINE_CENTER" cacheShape="false" layoutX="1011.0" prefHeight="820.0" prefWidth="310.0" spacing="25.0" style="-fx-background-color: #272076;">
+            <children>
+            <VBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="306.0" style="-fx-background-color: #a42c77;">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="60.0" text="SELECT" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="-17.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+            </VBox>
+                <JFXButton fx:id="btnClass" buttonType="RAISED"  onDragDetected="#cDragDetect" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ad0e3d;" text="Class" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="btnFunc" buttonType="RAISED"  onDragDetected="#mDragDetect" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ad0e3d;" text="Method" textFill="WHITE" />
+                <JFXButton fx:id="btnArg" buttonType="RAISED"  onDragDetected="#bDragDetect" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ad0e3d;" text="Argument" textFill="WHITE" />
+            <JFXComboBox fx:id="cbxCho" focusColor="#5aff57" labelFloat="true" prefHeight="31.0" prefWidth="91.0" promptText="Select" style="-fx-background-color: #A2B5EE; -fx-text-alignment: center;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="400.0" />
+               </VBox.margin>
+            </JFXComboBox>
+            <JFXCheckBox fx:id="cheboxSave" text="Save As File" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </JFXCheckBox>
+            <JFXButton fx:id="btnExp" onAction="#exportCode" buttonType="RAISED" prefHeight="31.0" prefWidth="203.0" style="-fx-background-color: #ad0e3d;" text="EXPORT" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="-20.0" />
+               </VBox.margin>
+            </JFXButton>
+            </children>
+        </VBox>
+      <Pane onDragDropped="#pWhenDropped" onDragOver="#pDragOver" prefHeight="819.0" prefWidth="958.0" visible="false">
+         <children>
+            <JFXTextArea fx:id="textArea" focusColor="WHITE" layoutX="9.0" layoutY="9.0" prefHeight="806.0" prefWidth="942.0" style="-fx-text-fill: #00E71A" unFocusColor="WHITE" visible="false" wrapText="true" />
+        </children></Pane>
+    </children>
+</AnchorPane>

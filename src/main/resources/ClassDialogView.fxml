@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="700.0" spacing="16.0" style="-fx-background-color: #2E2E2E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClassDia.ClassDialogViewFxml">
+   <children>
+      <Label fx:id="lblTitle" layoutX="109.0" layoutY="33.0" prefHeight="30.0" prefWidth="317.0" text="Please enter class information" textAlignment="CENTER" textFill="#fff9f9">
+         <font>
+            <Font name="Candara" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="660.0">
+         <children>
+            <Label fx:id="lblName" prefHeight="21.0" prefWidth="83.0" text="Class Name" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXTextField fx:id="txtName" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="521.0" promptText="Enter" style="-fx-background-color: #C0C6D8;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="184.0" prefWidth="660.0">
+         <children>
+            <Label fx:id="lblName1" prefHeight="21.0" prefWidth="83.0" text="Class Access" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXComboBox fx:id="cbxAccess" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="181.0" promptText="Select" style="-fx-background-color: #C0C6D8;" unFocusColor="#b2b1b1" />
+            <Label fx:id="lblParent" text="Class Parents" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="45.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <TreeView fx:id="ChoiceBParents" prefHeight="200.0" prefWidth="186.0" style="-fx-background-color: #2E2E2E;" />
+         </children>
+      </HBox>
+      <JFXCheckBox fx:id="CheckBAbstract" layoutX="78.0" layoutY="327.0" prefHeight="21.0" prefWidth="104.0" text="Abstract Class" textFill="WHITE" unCheckedColor="#8a8888">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </JFXCheckBox>
+      <JFXButton fx:id="btnDone" layoutX="279.0" layoutY="406.0" onAction="#collectClass" prefHeight="45.0" prefWidth="104.0" style="-fx-background-color: #4A68C0;" text="Done!" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="159.0" layoutY="411.0" onAction="#cancelAction" style="-fx-background-color: #C04A4A;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</VBox>

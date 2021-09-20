@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="704.0" spacing="16.0" style="-fx-background-color: #2E2E2E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MethodDia.MethodDialogViewFxml">
+   <children>
+      <Label fx:id="lblTitle" layoutX="109.0" layoutY="33.0" prefHeight="30.0" prefWidth="350.0" text="Please enter method information" textAlignment="CENTER" textFill="#fff9f9">
+         <font>
+            <Font name="Candara" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="543.0">
+         <children>
+            <Label fx:id="lblName" prefHeight="21.0" prefWidth="99.0" text="Method Name" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXTextField fx:id="txtName" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="501.0" promptText="  Please enter a name" style="-fx-background-color: #C0C6D8;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="559.0">
+         <children>
+            <Label fx:id="lblName1" prefHeight="21.0" prefWidth="99.0" text="Method Type" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXTextField fx:id="txtType"  focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="160.0" promptText="  Please enter a type" style="-fx-background-color: #C0C6D8;" />
+            <Label fx:id="lblAccess" text="Method Access" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="60.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXComboBox fx:id="cbxAccess" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="160.0" promptText="  Select" style="-fx-background-color: #C0C6D8;" unFocusColor="#b2b1b1">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </JFXComboBox>
+         </children>
+      </HBox>
+      <Label fx:id="lblParent" layoutX="76.0" layoutY="265.0" text="Method Paramiters" textFill="WHITE">
+         <VBox.margin>
+            <Insets bottom="-5.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <JFXTextField fx:id="txtParam" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="562.0" promptText="  Seprate them with comma (EX. String str, int a)" style="-fx-background-color: #C0C6D8;" />
+      <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="559.0">
+         <children>
+            <Label fx:id="lblName2" prefHeight="21.0" prefWidth="99.0" text="Add to Class" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" right="20.0" />
+               </HBox.margin>
+            </Label>
+            <JFXComboBox fx:id="cbxClassName" focusColor="#56aeff" labelFloat="true" prefHeight="31.0" prefWidth="160.0" promptText="  Select" style="-fx-background-color: #C0C6D8;" unFocusColor="#b2b1b1" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <JFXCheckBox fx:id="CheckBStatic" prefHeight="21.0" prefWidth="130.0" text="This is Static" textFill="WHITE" unCheckedColor="#8a8888" />
+                  <JFXCheckBox fx:id="CheckBAbstract" prefHeight="21.0" prefWidth="130.0" text="This is Abstract" textFill="WHITE" unCheckedColor="#8a8888" />
+               </children>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <JFXButton fx:id="btnDone" layoutX="279.0" layoutY="406.0" onAction="#collectMethod" prefHeight="45.0" prefWidth="104.0" style="-fx-background-color: #4A68C0;" text="Done!" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="19.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </JFXButton>
+      <JFXButton fx:id="btnCancel" layoutX="159.0" layoutY="411.0" onAction="#cancelAction" style="-fx-background-color: #C04A4A;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Candara Bold" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" />
+   </padding>
+</VBox>
