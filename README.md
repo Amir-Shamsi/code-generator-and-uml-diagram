@@ -88,8 +88,9 @@ class Tree extends Earth
 
 ### Installation
 1. Clone the repo
-  ```sh
-  git clone https://github.com/Amir-Shamsi/code-generator-and-uml-diagram.git
-  ```
+
+     ```sh
+     git clone https://github.com/Amir-Shamsi/code-generator-and-uml-diagram.git
+     ```
 2. Install the dependencies from `pom.xml`
 3. Enjoy!
