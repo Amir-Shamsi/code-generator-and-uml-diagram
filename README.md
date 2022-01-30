@@ -27,7 +27,7 @@ This application allows drawing of UML diagrams in graphic user interface and ge
    - Parameters
 
 ### Draw UML Graph
-it easy to draw a uml graph based on what you need only by dragging `class` or `method` or `Arg` into the board. 
+It's easy to draw a uml graph based on what you need only by dragging `class` or `method` or `Arg` into the board. 
 <p align="center">
   <img src="uml-sc.png"/>
 </p>
