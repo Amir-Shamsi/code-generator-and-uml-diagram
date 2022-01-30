@@ -65,7 +65,6 @@ class Robot
 
 public class Foo extends FooParent
 {
-    public int water;
     public static float calculateFoo(int fooNum)
     {
     }
