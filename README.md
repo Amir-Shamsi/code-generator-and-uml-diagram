@@ -10,13 +10,13 @@
 
 <p align="left">
   <a href="https://openjfx.io/">
-    <img src="JavaFX_logo.png" width="90"/>
+    <img src="src/main/resources/icons/JavaFX_logo.png" width="90"/>
   </a>
   <a href="http://www.jfoenix.com/">
-    <img src="logo-JFX.png" width="131"/>
+    <img src="src/main/resources/icons/logo-JFX.png" width="131"/>
   </a>
   <a href="https://www.java.com/">
-    <img src="java-card.png" width="76.5"/>
+    <img src="src/main/resources/icons/java-card.png" width="76.5"/>
   </a>
 </p>
 
