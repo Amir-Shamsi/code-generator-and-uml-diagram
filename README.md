@@ -24,7 +24,7 @@
 This application allows drawing of UML diagrams in graphic user interface and generating the code in Java or Cpp. It supports:
    - Classes
    - Methods
-   - Parameters
+   - Arguments
 
 ### Draw UML Graph
 It's easy to draw a uml graph based on what you need only by dragging `class` or `method` or `Arg` into the board. 
